@@ -38,12 +38,13 @@ This will start a [Jupyter Notebook](https://jupyter.org/) server on localhost a
 
 ## Option Two: Manual Install
 
-It is recommended to use a virtual environment like [Virtualenv](https://virtualenv.pypa.io/en/stable/), particularly since many packages here are out of date.
+It is recommended to use a virtual environment like [Virtualenv](https://virtualenv.pypa.io/en/stable/), particularly since many packages here are older.
 ```sh
-$ git clone https://git...
+$ git clone https://github.com/jmontag43/udacity_quadcopter.git
 $ sudo pip install virtualenv
 $ virtualenv -p python3.6 myenv		# Make sure you pass in your python 3.6 interpreter with -p
 $ source myenv/bin/activate
+(myenv) $ cd udacity_quadcopter
 (myenv) $ pip install -r requirements.txt       # requirements-gpu.txt for gpu; requires above CUDA packages
 (myenv) $ jupyter notebook
 ```
